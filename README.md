@@ -37,6 +37,7 @@
 - Main > 작성자
 - 본인 브랜치에서 작성 후 Main으로 PR
     - Review 생략
+    - Merge 후 Branch 삭제 생략 
 
     
 # 스터디 일자
