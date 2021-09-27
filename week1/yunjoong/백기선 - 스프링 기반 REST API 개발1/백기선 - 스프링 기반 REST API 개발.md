@@ -51,6 +51,8 @@ Uniform interface라는 아키텍처 스타일은 4가지 제약조건을 지닌
 
 ![img_3.png](img_3.png)
 
+![img_13.png](img_13.png)
+
 - 응답의 문법과 변수의 뜻을 유추할 수 있는 명세까지 존재
 
 > 응답 하나만으로 응답의 모든 내용을 유추 할 수 있도록 해주어야 한다는것을 의미하며, 이는 서버가 변하여 메시지가 변해도 여전히 클라이언트가 메시지를 읽고 변화에 대응할 수 있도록 해야 한다.
@@ -85,6 +87,8 @@ Uniform interface라는 아키텍처 스타일은 4가지 제약조건을 지닌
 
 ## Self-descriptive messages 해결 방안
 
+![img_13.png](img_13.png)
+
 - Link 헤더에 Profile Relation으로 문서 링크를 제공한다.
 
 ## HATEOAS 해결 방안
@@ -104,3 +108,7 @@ Uniform interface라는 아키텍처 스타일은 4가지 제약조건을 지닌
 # 정리
 
 ![img_8.png](img_8.png)
+
+![img_14.png](img_14.png)
+
+![img_16.png](img_16.png)
