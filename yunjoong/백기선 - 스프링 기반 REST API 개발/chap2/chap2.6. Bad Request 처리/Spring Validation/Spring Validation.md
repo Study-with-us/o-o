@@ -53,8 +53,9 @@ public class ContactService {
 
 # @Validated, 제약조건 그룹핑
 
-> 제약조건 어노테이션이 붙은 RequestDto를 요청마다 다르게 검증하고 싶다면? groups 속성과 @Validated을 이용하여 특정 제약만 검증을 진행하게 할 수 있다
->
+> 제약조건 어노테이션이 붙은 RequestDto를 요청마다 다르게 검증하고 싶다면? 
+> 
+>groups 속성과 @Validated을 이용하여 특정 제약만 검증을 진행하게 할 수 있다
 
 ## @Validated를 사용한 특정 제약조건만 검증하기
 
@@ -185,7 +186,7 @@ public class SmsBytesSizeValidator implements ConstraintValidator<SmsBytesSize, 
 
 ```java
 public class CreateContact {
-    @SmsBytesSize 
+    @SmsBytesSize(message="msg", groups=ValidGroup.class)
     @Length(max = 64)
     @NotBlank
     private String uid;
